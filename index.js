@@ -7,7 +7,7 @@ async function loadConfig(filename) {
         const data = await fs.readFile(filename, 'utf-8');
         return JSON.parse(data);
     } catch (error) {
-        console.error('❌ Помилка при читанні конфігурації:', error.message);
+        console.error(' Помилка при читанні конфігурації:', error.message);
         process.exit(1);
     }
 }
